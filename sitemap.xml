@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://anyuoo.github.io/2019/04/24/hello-world/</loc>
+    
+    <lastmod>2020-02-28T07:40:00.060Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/02/28/test/</loc>
+    
+    <lastmod>2020-02-28T07:31:24.061Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/02/28/init/</loc>
+    
+    <lastmod>2020-02-28T07:31:09.244Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://anyuoo.github.io/404.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
@@ -30,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/repository/index.html</loc>
-    
-    <lastmod>2020-02-28T06:06:04.139Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://anyuoo.github.io/tags/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
@@ -44,9 +58,9 @@
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/2020/02/28/hello-world/</loc>
+    <loc>http://anyuoo.github.io/repository/index.html</loc>
     
-    <lastmod>2020-02-28T05:09:37.704Z</lastmod>
+    <lastmod>2020-02-28T06:06:04.139Z</lastmod>
     
   </url>
   
