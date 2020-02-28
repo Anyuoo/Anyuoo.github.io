@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/</loc>
+    
+    <lastmod>2020-02-28T07:58:17.940Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://anyuoo.github.io/2019/04/24/hello-world/</loc>
     
     <lastmod>2020-02-28T07:40:00.060Z</lastmod>
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/repository/index.html</loc>
+    <loc>http://anyuoo.github.io/links/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/links/index.html</loc>
+    <loc>http://anyuoo.github.io/repository/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
     

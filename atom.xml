@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anyuoo.github.io/"/>
-  <updated>2020-02-28T07:31:24.061Z</updated>
+  <updated>2020-02-28T07:58:17.940Z</updated>
   <id>http://anyuoo.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/</id>
+    <published>2020-02-28T07:31:24.000Z</published>
+    <updated>2020-02-28T07:58:17.940Z</updated>
+    
+    <content type="html"><![CDATA[<p>122221232212211</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;122221232212211&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://anyuoo.github.io/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://anyuoo.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>test</title>
