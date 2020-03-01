@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anyuoo.github.io/"/>
-  <updated>2020-02-28T07:58:17.940Z</updated>
+  <updated>2020-03-01T08:10:01.754Z</updated>
   <id>http://anyuoo.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux文件系统操作命令</title>
+    <link href="http://anyuoo.github.io/2020/02/28/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
+    <id>http://anyuoo.github.io/2020/02/28/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-02-28T07:31:24.000Z</published>
+    <updated>2020-03-01T08:10:01.754Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-ls-list-显示目录文件-命令所在路径-bin-ls"><a href="#1-ls-list-显示目录文件-命令所在路径-bin-ls" class="headerlink" title="1.  ls  list 显示目录文件  命令所在路径 : /bin/ls"></a>1.  <strong>ls</strong>  <code>list</code> 显示目录文件  命令所在路径 : <em>/bin/ls</em></h4><pre><code>语法：ls 选项[-ldi] [文件或目录]* -l `long` 长格式显示，详细信息显示* -h `human` 以人可读方式显示数据大小* -i `iNode` 显示文件的i节点号* -d `direction` 查看目录属性* -a `all` 显示所有文件，包括隐藏文件</code></pre><p><code>ps:设立隐藏文件主要为了将系统文件隐藏，避免用户误操作</code></p><h4 id="2-mkdir-make-directeries-创建目录-命令所在路径：-bin-mkdir"><a href="#2-mkdir-make-directeries-创建目录-命令所在路径：-bin-mkdir" class="headerlink" title="2. mkdir make directeries 创建目录 命令所在路径：/bin/mkdir"></a>2. <strong>mkdir</strong> <code>make directeries</code> 创建目录 命令所在路径：<em>/bin/mkdir</em></h4><pre><code>语法：mkdir 选项[-p] [目录名称]* -p 递归创建多级文件夹</code></pre><h4 id="3-rmdirremove-directeries-删除空目录-命令所在路径：-bin-rmdir"><a href="#3-rmdirremove-directeries-删除空目录-命令所在路径：-bin-rmdir" class="headerlink" title="3. rmdirremove directeries 删除空目录 命令所在路径：/bin/rmdir"></a>3. <strong>rmdir</strong><code>remove directeries</code> 删除空目录 命令所在路径：<em>/bin/rmdir</em></h4><pre><code>语法：rmdir [目录名]</code></pre><h4 id="4-rm-remove-删除目录或文件-命令所在路径：-bin-rm"><a href="#4-rm-remove-删除目录或文件-命令所在路径：-bin-rm" class="headerlink" title="4. rm remove 删除目录或文件 命令所在路径：/bin/rm"></a>4. <strong>rm</strong> <code>remove</code> 删除目录或文件 命令所在路径：<em>/bin/rm</em></h4><pre><code>语法：rm 选项[-rf] [目录名或文件名]* -r 递归删除，一次删除多级文件* -f `force` 强制执行</code></pre><h4 id="5-cp-copy-复制文件或目录-命令所在路径：-bin-cp"><a href="#5-cp-copy-复制文件或目录-命令所在路径：-bin-cp" class="headerlink" title="5.cp copy 复制文件或目录 命令所在路径：/bin/cp"></a>5.<strong>cp</strong> <code>copy</code> 复制文件或目录 命令所在路径：<em>/bin/cp</em></h4><pre><code>语法：cp -rp [原文件或目录] [目标目录]* -r 复制目录* -p 保留文件属性</code></pre><h4 id="6-touch-创建空文件夹-命令所在路径：-bin-touch"><a href="#6-touch-创建空文件夹-命令所在路径：-bin-touch" class="headerlink" title="6.touch 创建空文件夹 命令所在路径：/bin/touch"></a>6.<strong>touch</strong> 创建空文件夹 命令所在路径：<em>/bin/touch</em></h4><pre><code>语法：touch [文件名]</code></pre><h4 id="7-cat-显示文件内容-命令所在路径：-bin-cat"><a href="#7-cat-显示文件内容-命令所在路径：-bin-cat" class="headerlink" title="7. cat 显示文件内容 命令所在路径：/bin/cat"></a>7. <strong>cat</strong> 显示文件内容 命令所在路径：<em>/bin/cat</em></h4><pre><code>语法：cat 选项[-n b] [文件名]* -n `number` 由 1 开始对所有输出的行数编号* -b `number nonblan` 和 -n 相似，只不过对于空白行不编号</code></pre><h4 id="8-more-分页显示文件内容-命令所在路径：-bin-more"><a href="#8-more-分页显示文件内容-命令所在路径：-bin-more" class="headerlink" title="8. more 分页显示文件内容 命令所在路径：/bin/more"></a>8. <strong>more</strong> 分页显示文件内容 命令所在路径：<em>/bin/more</em></h4><pre><code>语法：more 选项[-num +num ] [文件名]* -num `number` 一次显示的行数* +num `number` 从第 num 行开始显示常用操作命令：* Enter 向下n行，需要定义。默认为1行* Ctrl+F 向下滚动一屏* 空格键 向下滚动一屏* Ctrl+B 返回上一屏* = 输出当前行的行号* ：f 输出文件名和当前行的行号* V 调用vi编辑器* !命令 调用Shell，并执行命令* q 退出more</code></pre><h4 id="9-less-less-与-more-类似，但使用-less-可以随意浏览文件，而-more-仅能向前移动，却不能向后移动，而且-less-在查看之前不会加载整个文件"><a href="#9-less-less-与-more-类似，但使用-less-可以随意浏览文件，而-more-仅能向前移动，却不能向后移动，而且-less-在查看之前不会加载整个文件" class="headerlink" title="9. less less 与 more 类似，但使用 less 可以随意浏览文件，而 more 仅能向前移动，却不能向后移动，而且 less 在查看之前不会加载整个文件"></a>9. <strong>less</strong> less 与 more 类似，但使用 less 可以随意浏览文件，而 more 仅能向前移动，却不能向后移动，而且 less 在查看之前不会加载整个文件</h4><pre><code>语法：less [文件名]</code></pre><h4 id="10-head-显示文件前几行-命令所在路径：usr-bin-head"><a href="#10-head-显示文件前几行-命令所在路径：usr-bin-head" class="headerlink" title="10. head 显示文件前几行 命令所在路径：usr/bin/head"></a>10. <strong>head</strong> 显示文件前几行 命令所在路径：<em>usr/bin/head</em></h4><pre><code>语法：head [文件名]* -n 指定行数</code></pre><h4 id="11-tail-显示文件后面几行-命令所在路径：-usr-bin-tail"><a href="#11-tail-显示文件后面几行-命令所在路径：-usr-bin-tail" class="headerlink" title="11. tail 显示文件后面几行 命令所在路径：/usr/bin/tail"></a>11. <strong>tail</strong> 显示文件后面几行 命令所在路径：<em>/usr/bin/tail</em></h4><pre><code>语法：tail [文件名]* -n 指定行数* -f 动态显示</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-ls-list-显示目录文件-命令所在路径-bin-ls&quot;&gt;&lt;a href=&quot;#1-ls-list-显示目录文件-命令所在路径-bin-ls&quot; class=&quot;headerlink&quot; title=&quot;1.  ls  list 显示目录文件  命令所在路径 : /b
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://anyuoo.github.io/categories/Linux/"/>
+    
+    
+      <category term="Centos" scheme="http://anyuoo.github.io/tags/Centos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>test</title>
     <link href="http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/"/>
     <id>http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/</id>
     <published>2020-02-28T07:31:24.000Z</published>
-    <updated>2020-02-28T07:58:17.940Z</updated>
+    <updated>2020-03-01T08:18:58.673Z</updated>
     
     <content type="html"><![CDATA[<p>122221232212211</p>]]></content>
     
@@ -55,40 +81,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>init</title>
-    <link href="http://anyuoo.github.io/2020/02/28/init/"/>
-    <id>http://anyuoo.github.io/2020/02/28/init/</id>
-    <published>2020-02-28T07:31:09.000Z</published>
-    <updated>2020-02-28T07:31:09.244Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 添加分类及标签</title>
-    <link href="http://anyuoo.github.io/2019/04/24/hello-world/"/>
-    <id>http://anyuoo.github.io/2019/04/24/hello-world/</id>
-    <published>2019-04-24T07:40:24.000Z</published>
-    <updated>2020-02-28T07:40:00.060Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="http://anyuoo.github.io/categories/Hexo/"/>
-    
-    
-      <category term="博客" scheme="http://anyuoo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
