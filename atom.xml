@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anyuoo.github.io/"/>
-  <updated>2020-03-01T08:10:01.754Z</updated>
+  <updated>2020-03-02T12:13:02.789Z</updated>
   <id>http://anyuoo.github.io/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>模板</title>
+    <link href="http://anyuoo.github.io/2020/03/02/%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://anyuoo.github.io/2020/03/02/%E6%A8%A1%E6%9D%BF/</id>
+    <published>2020-03-02T12:12:11.217Z</published>
+    <updated>2020-03-02T12:13:02.789Z</updated>
+    
+    <content type="html"><![CDATA[<p>title: Linux文件系统操作命令 </p><p>comment: true<br>categories:<br>tags: </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;title: Linux文件系统操作命令 &lt;/p&gt;
+&lt;p&gt;comment: true&lt;br&gt;categories:&lt;br&gt;tags: &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux权限命令（1）--chmod</title>
+    <link href="http://anyuoo.github.io/2020/03/02/Li/"/>
+    <id>http://anyuoo.github.io/2020/03/02/Li/</id>
+    <published>2020-03-02T12:07:11.000Z</published>
+    <updated>2020-03-02T13:37:40.312Z</updated>
+    
+    <content type="html"><![CDATA[<p>chmod <code>change the permissions mode od a file</code>改变文件或目录权限 命令路径：<em>/bin/chmod</em><br>语法：<br>    * chmod [{ugoa}{+-=}{rwx}] [文件或目录]<br>    * chmod [mode=421 ] [文件或目录]<br>参数：<br>    * u <code>user</code> 所有者<br>    * g <code>group</code> 所属组<br>    * o <code>other</code> 其他人<br>    * a <code>all</code> 所有人<br>    * r <code>read</code>读权限 数字表示–&gt;<strong>4</strong><br>    * w <code>write</code> 写权限 数字表示–&gt;<strong>2</strong><br>    * x <code>execute</code> 执行权限 数字表示–&gt;<strong>1</strong><br>    * -R 可递归赋给子文件夹相同权限<br><img src="/.io//chmod.chmod.jpg" alt><br>由图可知，文件夹 <em>Videos</em> 权限是 <strong>rwxr-xr-x</strong> ， 每三个一组，从左到右分别是<br>    * 所有者权限：rwx <code>4+2+1=7</code><br>    * 所有组权限：r-x <code>4+1=5</code><br>    * 其他人权限：r-x <code>4+1=5</code><br>用数字赋值权限：chmod 755 [文件或目录]<br>    对于目录：rx代表可以查看和进目录，权限一般同时出现<br>    对于目录中文件的删除执行不是看文件权限而是看目录权限</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;chmod &lt;code&gt;change the permissions mode od a file&lt;/code&gt;改变文件或目录权限 命令路径：&lt;em&gt;/bin/chmod&lt;/em&gt;&lt;br&gt;语法：&lt;br&gt;    * chmod [{ugoa}{+-=}{rwx}] [文件或目
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://anyuoo.github.io/categories/Linux/"/>
+    
+    
+      <category term="Centos" scheme="http://anyuoo.github.io/tags/Centos/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux权限命令--chmod</title>
+    <link href="http://anyuoo.github.io/2020/03/02/Linux--chmod/"/>
+    <id>http://anyuoo.github.io/2020/03/02/Linux--chmod/</id>
+    <published>2020-03-02T12:07:11.000Z</published>
+    <updated>2020-03-02T12:35:26.596Z</updated>
+    
+    <content type="html"><![CDATA[<p>chmod <code>change the permissions mode od a file</code>改变文件或目录权限 命令路径：<em>/bin/chmod</em><br>    语法：<br>    * chmod [{ugoa}{+-=}{rwx}] [文件或目录]<br>    * chmod [mode=421 ] [文件或目录]<br>    参数：<br>    * u <code>user</code> 所有者<br>    * g <code>group</code> 所属组<br>    * o <code>other</code> 其他人<br>    * a <code>all</code> 所有人<br>    * <img src alt></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;chmod &lt;code&gt;change the permissions mode od a file&lt;/code&gt;改变文件或目录权限 命令路径：&lt;em&gt;/bin/chmod&lt;/em&gt;&lt;br&gt;    语法：&lt;br&gt;    * chmod [{ugoa}{+-=}{rwx}] [
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://anyuoo.github.io/categories/Linux/"/>
+    
+    
+      <category term="Centos" scheme="http://anyuoo.github.io/tags/Centos/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux文件系统操作命令</title>
@@ -39,48 +115,6 @@
     
     
       <category term="Centos" scheme="http://anyuoo.github.io/tags/Centos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/</id>
-    <published>2020-02-28T07:31:24.000Z</published>
-    <updated>2020-03-01T08:18:58.673Z</updated>
-    
-    <content type="html"><![CDATA[<p>122221232212211</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;122221232212211&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="java" scheme="http://anyuoo.github.io/categories/java/"/>
-    
-    
-      <category term="java" scheme="http://anyuoo.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://anyuoo.github.io/2020/02/28/test/"/>
-    <id>http://anyuoo.github.io/2020/02/28/test/</id>
-    <published>2020-02-28T07:31:24.000Z</published>
-    <updated>2020-02-28T07:31:24.061Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
     
   </entry>
   
