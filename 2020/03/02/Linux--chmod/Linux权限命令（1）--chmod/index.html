@@ -21,25 +21,25 @@
   <meta name="description" content="chmod change the permissions mode od a file改变文件或目录权限 命令路径：&#x2F;bin&#x2F;chmod语法：    * chmod [{ugoa}{+-&#x3D;}{rwx}] [文件或目录]    * chmod [mode&#x3D;421 ] [文件或目录]参数：    * u user 所有者    * g group 所属组    * o other 其他人    * a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux权限命令（1）--chmod">
-<meta property="og:url" content="http://anyuoo.github.io/2020/03/02/Li/index.html">
+<meta property="og:url" content="http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/index.html">
 <meta property="og:site_name" content="Virtual Life">
 <meta property="og:description" content="chmod change the permissions mode od a file改变文件或目录权限 命令路径：&#x2F;bin&#x2F;chmod语法：    * chmod [{ugoa}{+-&#x3D;}{rwx}] [文件或目录]    * chmod [mode&#x3D;421 ] [文件或目录]参数：    * u user 所有者    * g group 所属组    * o other 其他人    * a">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://anyuoo.github.io/.io//chmod.chmod.jpg">
+<meta property="og:image" content="http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/chmod.chmod.jpg">
 <meta property="article:published_time" content="2020-03-02T12:07:11.000Z">
-<meta property="article:modified_time" content="2020-03-02T13:37:40.312Z">
+<meta property="article:modified_time" content="2020-03-02T13:52:41.305Z">
 <meta property="article:author" content="Anyuoo">
 <meta property="article:tag" content="Centos">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://anyuoo.github.io/.io//chmod.chmod.jpg">
+<meta name="twitter:image" content="http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/chmod.chmod.jpg">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://anyuoo.github.io/2020/03/02/Li/index.html">
+  <link rel="canonical" href="http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/index.html">
   
   
     <link rel="icon" href="/favicon.png" type="image/x-icon">
   
   
-<link rel="stylesheet" href="../../../../css/style.css">
+<link rel="stylesheet" href="../../../../../css/style.css">
 
   
   
@@ -61,7 +61,7 @@
       
       <div class="profile-block text-center">
         <a id="avatar" href="https://github.com/Anyuoo" target="_blank">
-          <img class="img-circle img-rotate" src="../../../../images/avatar.jpg" width="200" height="200">
+          <img class="img-circle img-rotate" src="../../../../../images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">Anyu</h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md">Java Developer &amp; Student</h3>
@@ -105,7 +105,7 @@
         
         
         <li class="menu-item menu-item-home">
-          <a href="../../../../.">
+          <a href="../../../../../.">
             
             <i class="icon icon-home-fill"></i>
             
@@ -115,7 +115,7 @@
         
         
         <li class="menu-item menu-item-archives">
-          <a href="../../../../archives">
+          <a href="../../../../../archives">
             
             <i class="icon icon-archives-fill"></i>
             
@@ -125,7 +125,7 @@
         
         
         <li class="menu-item menu-item-categories">
-          <a href="../../../../categories">
+          <a href="../../../../../categories">
             
             <i class="icon icon-folder"></i>
             
@@ -135,7 +135,7 @@
         
         
         <li class="menu-item menu-item-tags">
-          <a href="../../../../tags">
+          <a href="../../../../../tags">
             
             <i class="icon icon-tags"></i>
             
@@ -145,7 +145,7 @@
         
         
         <li class="menu-item menu-item-repository">
-          <a href="../../../../repository">
+          <a href="../../../../../repository">
             
             <i class="icon icon-project"></i>
             
@@ -155,7 +155,7 @@
         
         
         <li class="menu-item menu-item-links">
-          <a href="../../../../links">
+          <a href="../../../../../links">
             
             <i class="icon icon-friendship"></i>
             
@@ -165,7 +165,7 @@
         
         
         <li class="menu-item menu-item-about">
-          <a href="../../../../about">
+          <a href="../../../../../about">
             
             <i class="icon icon-cup-fill"></i>
             
@@ -178,7 +178,7 @@
 	
     <ul class="social-links">
     	
-        <li><a href="../../../../https:/github.com/Anyuoo" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        <li><a href="../../../../../https:/github.com/Anyuoo" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
     </ul>
 
@@ -206,7 +206,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/Linux/">Linux</a><span class="category-list-count">3</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../../categories/Linux/">Linux</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -216,7 +216,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Centos/" rel="tag">Centos</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../../../../tags/Centos/" rel="tag">Centos</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -226,7 +226,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="../../../../tags/Centos/" style="font-size: 13px;">Centos</a>
+      <a href="../../../../../tags/Centos/" style="font-size: 13px;">Centos</a>
     </div>
   </div>
 
@@ -235,7 +235,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/03/">三月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/02/">二月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../../../archives/2020/03/">三月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../../../archives/2020/02/">二月 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -254,7 +254,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="../%E6%A8%A1%E6%9D%BF/" class="title">模板</a>
+                <a href="../../%E6%A8%A1%E6%9D%BF/" class="title">模板</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-02T12:12:11.217Z" itemprop="datePublished">2020-03-02</time>
@@ -266,7 +266,7 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="../../../../categories/Linux/">Linux</a>
+                <a class="category-link" href="../../../../../categories/Linux/">Linux</a>
               </p>
               <p class="item-title">
                 <a href="" class="title">Linux权限命令（1）--chmod</a>
@@ -281,25 +281,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="../../../../categories/Linux/">Linux</a>
+                <a class="category-link" href="../../../../../categories/Linux/">Linux</a>
               </p>
               <p class="item-title">
-                <a href="../Linux--chmod/" class="title">Linux权限命令--chmod</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2020-03-02T12:07:11.000Z" itemprop="datePublished">2020-03-02</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="../../../../categories/Linux/">Linux</a>
-              </p>
-              <p class="item-title">
-                <a href="../../../02/28/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="title">Linux文件系统操作命令</a>
+                <a href="../../../../02/28/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="title">Linux文件系统操作命令</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-02-28T07:31:24.000Z" itemprop="datePublished">2020-02-28</time>
@@ -320,7 +305,7 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-Li" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Linux--chmod/Linux权限命令（1）--chmod" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
@@ -342,13 +327,13 @@
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="../../../../categories/Linux/">Linux</a>
+    <a class="article-category-link" href="../../../../../categories/Linux/">Linux</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="../../../../tags/Centos/" rel="tag">Centos</a>
+	<a class="article-tag-link" href="../../../../../tags/Centos/" rel="tag">Centos</a>
   </span>
 
 
@@ -367,7 +352,7 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>chmod <code>change the permissions mode od a file</code>改变文件或目录权限 命令路径：<em>/bin/chmod</em><br>语法：<br>    * chmod [{ugoa}{+-=}{rwx}] [文件或目录]<br>    * chmod [mode=421 ] [文件或目录]<br>参数：<br>    * u <code>user</code> 所有者<br>    * g <code>group</code> 所属组<br>    * o <code>other</code> 其他人<br>    * a <code>all</code> 所有人<br>    * r <code>read</code>读权限 数字表示–&gt;<strong>4</strong><br>    * w <code>write</code> 写权限 数字表示–&gt;<strong>2</strong><br>    * x <code>execute</code> 执行权限 数字表示–&gt;<strong>1</strong><br>    * -R 可递归赋给子文件夹相同权限<br><img src="/.io//chmod.chmod.jpg" alt><br>由图可知，文件夹 <em>Videos</em> 权限是 <strong>rwxr-xr-x</strong> ， 每三个一组，从左到右分别是<br>    * 所有者权限：rwx <code>4+2+1=7</code><br>    * 所有组权限：r-x <code>4+1=5</code><br>    * 其他人权限：r-x <code>4+1=5</code><br>用数字赋值权限：chmod 755 [文件或目录]<br>    对于目录：rx代表可以查看和进目录，权限一般同时出现<br>    对于目录中文件的删除执行不是看文件权限而是看目录权限</p>
+        <p>chmod <code>change the permissions mode od a file</code>改变文件或目录权限 命令路径：<em>/bin/chmod</em><br>语法：<br>    * chmod [{ugoa}{+-=}{rwx}] [文件或目录]<br>    * chmod [mode=421 ] [文件或目录]<br>参数：<br>    * u <code>user</code> 所有者<br>    * g <code>group</code> 所属组<br>    * o <code>other</code> 其他人<br>    * a <code>all</code> 所有人<br>    * r <code>read</code>读权限 数字表示–&gt;<strong>4</strong><br>    * w <code>write</code> 写权限 数字表示–&gt;<strong>2</strong><br>    * x <code>execute</code> 执行权限 数字表示–&gt;<strong>1</strong><br>    * -R 可递归赋给子文件夹相同权限<br><img src="/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/chmod.chmod.jpg" alt><br>由图可知，文件夹 <em>Videos</em> 权限是 <strong>rwxr-xr-x</strong> ， 每三个一组，从左到右分别是<br>    * 所有者权限：rwx <code>4+2+1=7</code><br>    * 所有组权限：r-x <code>4+1=5</code><br>    * 其他人权限：r-x <code>4+1=5</code><br>用数字赋值权限：chmod 755 [文件或目录]<br>    对于目录：rx代表可以查看和进目录，权限一般同时出现<br>    对于目录中文件的删除执行不是看文件权限而是看目录权限</p>
 
       
     </div>
@@ -377,7 +362,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://anyuoo.github.io/2020/03/02/Li/" title="Linux权限命令（1）--chmod" target="_blank" rel="external">http://anyuoo.github.io/2020/03/02/Li/</a>
+      <a href="http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/" title="Linux权限命令（1）--chmod" target="_blank" rel="external">http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -392,7 +377,7 @@
     <figure class="media">
       <div class="media-left">
         <a href="https://github.com/Anyuoo" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="../../../../images/avatar.jpg" class="img-rounded w-full" alt="">
+          <img src="../../../../../images/avatar.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
@@ -424,12 +409,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="../%E6%A8%A1%E6%9D%BF/" title="模板"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="../../%E6%A8%A1%E6%9D%BF/" title="模板"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="../Linux--chmod/" title="Linux权限命令--chmod"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="../../../../02/28/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" title="Linux文件系统操作命令"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -464,14 +449,14 @@
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade active in" id="alipay">
               <div class="donate-payimg">
-                <img src="../../../../images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+                <img src="../../../../../images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
               </div>
               <p class="text-muted mv">扫码打赏，你说多少就多少</p>
               <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
             </div>
             <div role="tabpanel" class="tab-pane fade" id="wechatpay">
               <div class="donate-payimg">
-                <img src="../../../../images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+                <img src="../../../../../images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
               </div>
               <p class="text-muted mv">扫码打赏，你说多少就多少</p>
               <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
@@ -502,7 +487,7 @@
 	
     <ul class="social-links">
     	
-        <li><a href="../../../../https:/github.com/Anyuoo" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        <li><a href="../../../../../https:/github.com/Anyuoo" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
     </ul>
 
@@ -518,10 +503,10 @@
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
 
-<script src="../../../../js/plugin.min.js"></script>
+<script src="../../../../../js/plugin.min.js"></script>
 
 
-<script src="../../../../js/application.js"></script>
+<script src="../../../../../js/application.js"></script>
 
 
     <script>
@@ -535,13 +520,13 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
             UNTITLED: '(未命名)',
         },
         ROOT_URL: '/',
-        CONTENT_URL: '../../../../content.json',
+        CONTENT_URL: '../../../../../content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
 
-<script src="../../../../js/insight.js"></script>
+<script src="../../../../../js/insight.js"></script>
 
 
 
