@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anyuoo.github.io/"/>
-  <updated>2020-03-02T12:13:02.789Z</updated>
+  <updated>2020-03-06T14:05:43.389Z</updated>
   <id>http://anyuoo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>排序算法（一）</title>
+    <link href="http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2020-03-06T13:37:11.000Z</published>
+    <updated>2020-03-06T14:05:43.389Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-优化后的冒泡排序-内排序，稳定"><a href="#1-优化后的冒泡排序-内排序，稳定" class="headerlink" title="1. 优化后的冒泡排序  内排序，稳定"></a>1. <strong>优化后的冒泡排序</strong>  <code>内排序，稳定</code></h4><p>平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em><br>  <code>/**         * 冒泡排序 由大到小         */        public int[] bubbleSort(){            int times;            boolean need=true;//判断后面数据是否需要排序            //每一次找的最小数，放最后，n个数就进行n-1次循环            for (times=1; times&lt; length; times++) {                if (need == false)                    break;                need = false;                for (int pointer = 1; pointer &lt;= length - times; pointer++) {                    if (nums[pointer - 1] &lt; nums[pointer]) {                        need = true;//顺序变动，需要再次排序                        swap(pointer, pointer - 1);                    }                }            }            return nums;        }</code></p><h4 id="2-选择排序-内排序，不稳定"><a href="#2-选择排序-内排序，不稳定" class="headerlink" title="2. 选择排序 内排序，不稳定"></a>2. <strong>选择排序</strong> <code>内排序，不稳定</code></h4><p> 平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n^2)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em><br>    <code>/**         * 选择排序，每次选择最大的依次放前面         */        public int[] selectionSort(){            int max_index;//最大值下标            //tail 作为已排序的尾，可做排序次数            for (int tail = 0; tail &lt;length-1 ; tail++) {                max_index = tail;                for (int pointer = tail + 1; pointer &lt; length; pointer++) {                    if (nums[max_index] &lt; nums[pointer]) {                        max_index=pointer;                    }                }                swap(max_index, tail);            }            return nums;        }</code></p><h4 id="3-插入排序-内排序，稳定"><a href="#3-插入排序-内排序，稳定" class="headerlink" title="3.插入排序 内排序，稳定"></a>3.<strong>插入排序</strong> <code>内排序，稳定</code></h4><p> 平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em><br><code>/**         * 插入排序,由大到小         */        public int[] insertionSort(){            int tem;            //tail表示已排好序的尾部            for ( int tail=0;tail&lt;length-1;tail++){                tem = nums[tail + 1];                while (tail &gt;= 0 &amp;&amp; tem &gt; nums[tail]) {//tail&gt;=0 与 tem &gt; nums[tail] 两个判断条件不能互换                    nums[tail + 1] = nums[tail];                    tail--;                }                nums[tail + 1] = tem;            }            return nums;        }</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-优化后的冒泡排序-内排序，稳定&quot;&gt;&lt;a href=&quot;#1-优化后的冒泡排序-内排序，稳定&quot; class=&quot;headerlink&quot; title=&quot;1. 优化后的冒泡排序  内排序，稳定&quot;&gt;&lt;/a&gt;1. &lt;strong&gt;优化后的冒泡排序&lt;/strong&gt;  &lt;co
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://anyuoo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法 排序" scheme="http://anyuoo.github.io/tags/%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>模板</title>
@@ -42,12 +68,12 @@
   
   <entry>
     <title>Linux权限命令（1）--chmod</title>
-    <link href="http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/"/>
-    <id>http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</id>
+    <link href="http://anyuoo.github.io/2020/03/02/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/"/>
+    <id>http://anyuoo.github.io/2020/03/02/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</id>
     <published>2020-03-02T12:07:11.000Z</published>
-    <updated>2020-03-02T13:52:41.305Z</updated>
+    <updated>2020-03-06T13:38:21.983Z</updated>
     
-    <content type="html"><![CDATA[<p>chmod <code>change the permissions mode od a file</code>改变文件或目录权限 命令路径：<em>/bin/chmod</em><br>语法：<br>    * chmod [{ugoa}{+-=}{rwx}] [文件或目录]<br>    * chmod [mode=421 ] [文件或目录]<br>参数：<br>    * u <code>user</code> 所有者<br>    * g <code>group</code> 所属组<br>    * o <code>other</code> 其他人<br>    * a <code>all</code> 所有人<br>    * r <code>read</code>读权限 数字表示–&gt;<strong>4</strong><br>    * w <code>write</code> 写权限 数字表示–&gt;<strong>2</strong><br>    * x <code>execute</code> 执行权限 数字表示–&gt;<strong>1</strong><br>    * -R 可递归赋给子文件夹相同权限<br><img src="/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/chmod.chmod.jpg" alt><br>由图可知，文件夹 <em>Videos</em> 权限是 <strong>rwxr-xr-x</strong> ， 每三个一组，从左到右分别是<br>    * 所有者权限：rwx <code>4+2+1=7</code><br>    * 所有组权限：r-x <code>4+1=5</code><br>    * 其他人权限：r-x <code>4+1=5</code><br>用数字赋值权限：chmod 755 [文件或目录]<br>    对于目录：rx代表可以查看和进目录，权限一般同时出现<br>    对于目录中文件的删除执行不是看文件权限而是看目录权限</p>]]></content>
+    <content type="html"><![CDATA[<p>chmod <code>change the permissions mode od a file</code>改变文件或目录权限 命令路径：<em>/bin/chmod</em><br>语法：<br>    * chmod [{ugoa}{+-=}{rwx}] [文件或目录]<br>    * chmod [mode=421 ] [文件或目录]<br>参数：<br>    * u <code>user</code> 所有者<br>    * g <code>group</code> 所属组<br>    * o <code>other</code> 其他人<br>    * a <code>all</code> 所有人<br>    * r <code>read</code>读权限 数字表示–&gt;<strong>4</strong><br>    * w <code>write</code> 写权限 数字表示–&gt;<strong>2</strong><br>    * x <code>execute</code> 执行权限 数字表示–&gt;<strong>1</strong><br>    * -R 可递归赋给子文件夹相同权限<br><img src="/2020/03/02/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/chmod.chmod.jpg" alt><br>由图可知，文件夹 <em>Videos</em> 权限是 <strong>rwxr-xr-x</strong> ， 每三个一组，从左到右分别是<br>    * 所有者权限：rwx <code>4+2+1=7</code><br>    * 所有组权限：r-x <code>4+1=5</code><br>    * 其他人权限：r-x <code>4+1=5</code><br>用数字赋值权限：chmod 755 [文件或目录]<br>    对于目录：rx代表可以查看和进目录，权限一般同时出现<br>    对于目录中文件的删除执行不是看文件权限而是看目录权限</p>]]></content>
     
     <summary type="html">
     

@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://anyuoo.github.io/2020/03/02/Linux--chmod/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</loc>
+    <loc>http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     
-    <lastmod>2020-03-02T13:52:41.305Z</lastmod>
+    <lastmod>2020-03-06T14:05:43.389Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/03/02/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</loc>
+    
+    <lastmod>2020-03-06T13:38:21.983Z</lastmod>
     
   </url>
   
@@ -51,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/repository/index.html</loc>
+    <loc>http://anyuoo.github.io/tags/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/tags/index.html</loc>
+    <loc>http://anyuoo.github.io/repository/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
     
