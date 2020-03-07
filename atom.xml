@@ -48,14 +48,27 @@
     <title>排序算法（二）</title>
     <link href="http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
-    <published>2020-03-07T04:05:25.000Z</published>
-    <updated>2020-03-07T04:09:43.635Z</updated>
+    <published>2020-03-07T04:13:52.000Z</published>
+    <updated>2020-03-07T05:00:21.841Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><h3 id="算法思路："><a href="#算法思路：" class="headerlink" title="算法思路："></a>算法思路：</h3><p><strong>步骤一</strong>： 定义基准，并将原数组切割成两个无序数组，并将并将大于基准的放到基准右边，小于放到左边。</p><p><strong>步骤二</strong>： 对基准左边和右边的数组分别重复进行步骤一操作。</p><ul><li><p>基准可以是数组下标也可以是数组值</p></li><li><p>递归切割数组停止条件，当被切割数组长度为一时，停止。</p></li><li><p>   /**</p><pre><code>* 4.快速排序* quickS方法递归调用自身，处理被基准分割的数组* quick 定义基准pivot，并将大于基准的放到基准右边，小于放到左边*/</code></pre><p>   public int[] quickSort() {</p><pre><code>int head = 0;int tail = length - 1;quickS(head, tail);return nums;</code></pre><p>   }</p><p>   /**</p><pre><code>* 方法递归调用自身，处理被基准分割的数组** @param head* @param tail*/</code></pre><p>   public void quickS(int head, int tail) {</p><pre><code>if (head &lt; tail) {    int pivot = quick(head, tail);    quickS(head, pivot - 1);    quickS(pivot + 1, tail);}</code></pre><p>   }</p><p>   /**</p><pre><code>* 定义基准pivot，并将大于基准的放到基准右边，小于放到左边** @param head 数组头指针* @param tail 数组尾指针* @return*/</code></pre><p>   public int quick(int head, int tail) {</p><pre><code>int pivot = head;//初始化基准，赋值头指针while (head &lt; tail) {    while (head &lt; tail &amp;&amp; nums[pivot] &gt;= nums[tail])        tail--;    swap(pivot, tail);    pivot = tail;    while (head &lt; tail &amp;&amp; nums[pivot] &lt; nums[head])        head++;    swap(pivot, head);    pivot = head;}return pivot;</code></pre><p>   }</p></li></ul>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;快速排序&quot;&gt;&lt;a href=&quot;#快速排序&quot; class=&quot;headerlink&quot; title=&quot;快速排序&quot;&gt;&lt;/a&gt;快速排序&lt;/h2&gt;&lt;h3 id=&quot;算法思路：&quot;&gt;&lt;a href=&quot;#算法思路：&quot; class=&quot;headerlink&quot; title=&quot;算法思路：&quot;&gt;
+      
     
     </summary>
     
     
+      <category term="算法" scheme="http://anyuoo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="排序" scheme="http://anyuoo.github.io/categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/"/>
+    
+    
+      <category term="快速排序" scheme="http://anyuoo.github.io/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
@@ -88,30 +101,6 @@
       <category term="选择排序" scheme="http://anyuoo.github.io/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
     
       <category term="插入排序" scheme="http://anyuoo.github.io/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模板</title>
-    <link href="http://anyuoo.github.io/2020/03/02/%E6%A8%A1%E6%9D%BF/"/>
-    <id>http://anyuoo.github.io/2020/03/02/%E6%A8%A1%E6%9D%BF/</id>
-    <published>2020-03-02T12:12:11.217Z</published>
-    <updated>2020-03-02T12:13:02.789Z</updated>
-    
-    <content type="html"><![CDATA[<p>title: Linux文件系统操作命令 </p><p>comment: true<br>categories:<br>tags: </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;title: Linux文件系统操作命令 &lt;/p&gt;
-&lt;p&gt;comment: true&lt;br&gt;categories:&lt;br&gt;tags: &lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
@@ -167,48 +156,6 @@
       <category term="Centos" scheme="http://anyuoo.github.io/tags/Centos/"/>
     
       <category term="Linux文件处理命令" scheme="http://anyuoo.github.io/tags/Linux%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/</id>
-    <published>2020-02-28T07:31:24.000Z</published>
-    <updated>2020-03-07T05:23:31.141Z</updated>
-    
-    <content type="html"><![CDATA[<p>122221232212211</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;122221232212211&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="java" scheme="http://anyuoo.github.io/categories/java/"/>
-    
-    
-      <category term="java" scheme="http://anyuoo.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://anyuoo.github.io/2020/02/28/test/"/>
-    <id>http://anyuoo.github.io/2020/02/28/test/</id>
-    <published>2020-02-28T07:31:24.000Z</published>
-    <updated>2020-03-07T05:23:31.141Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
     
   </entry>
   
