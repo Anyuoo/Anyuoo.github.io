@@ -18,17 +18,17 @@
   
   
   <title>排序算法（一） | Virtual Life</title>
-  <meta name="description" content="1. 优化后的冒泡排序  内排序，稳定平均时间复杂度：O(n^2) 最好情况：O(n) 最坏情况：O(n^2) 空间复杂度：O（1） &#x2F;**         * 冒泡排序 由大到小         *&#x2F;        public int[] bubbleSort(){            int times;            boolean need&#x3D;true;&#x2F;&#x2F;判断后面数据是否需要排">
+  <meta name="description" content="1. 优化后的冒泡排序  内排序，稳定平均时间复杂度：O(n^2)  最好情况：O(n)  最坏情况：O(n^2) 空间复杂度：O（1）  &#x2F;**         * 冒泡排序 由大到小         *&#x2F;        public int[] bubbleSort(int[] nums){            int times;            boolean need&#x3D;true;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="排序算法（一）">
 <meta property="og:url" content="http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Virtual Life">
-<meta property="og:description" content="1. 优化后的冒泡排序  内排序，稳定平均时间复杂度：O(n^2) 最好情况：O(n) 最坏情况：O(n^2) 空间复杂度：O（1） &#x2F;**         * 冒泡排序 由大到小         *&#x2F;        public int[] bubbleSort(){            int times;            boolean need&#x3D;true;&#x2F;&#x2F;判断后面数据是否需要排">
+<meta property="og:description" content="1. 优化后的冒泡排序  内排序，稳定平均时间复杂度：O(n^2)  最好情况：O(n)  最坏情况：O(n^2) 空间复杂度：O（1）  &#x2F;**         * 冒泡排序 由大到小         *&#x2F;        public int[] bubbleSort(int[] nums){            int times;            boolean need&#x3D;true;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-06T13:37:11.000Z">
-<meta property="article:modified_time" content="2020-03-06T14:14:44.108Z">
+<meta property="article:modified_time" content="2020-03-07T02:23:24.525Z">
 <meta property="article:author" content="Anyuoo">
-<meta property="article:tag" content="算法 排序">
+<meta property="article:tag" content="排序">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
   <link rel="canonical" href="http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
@@ -214,7 +214,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Centos/" rel="tag">Centos</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F/" rel="tag">算法 排序</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Centos/" rel="tag">Centos</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -224,7 +224,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="../../../../tags/Centos/" style="font-size: 14px;">Centos</a> <a href="../../../../tags/%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F/" style="font-size: 13px;">算法 排序</a>
+      <a href="../../../../tags/Centos/" style="font-size: 14px;">Centos</a> <a href="../../../../tags/%E6%8E%92%E5%BA%8F/" style="font-size: 13px;">排序</a>
     </div>
   </div>
 
@@ -331,7 +331,7 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="../../../../tags/%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F/" rel="tag">算法 排序</a>
+	<a class="article-tag-link" href="../../../../tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a>
   </span>
 
 
@@ -340,7 +340,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 371(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 377(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -350,10 +350,60 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h4 id="1-优化后的冒泡排序-内排序，稳定"><a href="#1-优化后的冒泡排序-内排序，稳定" class="headerlink" title="1. 优化后的冒泡排序  内排序，稳定"></a>1. <strong>优化后的冒泡排序</strong>  <code>内排序，稳定</code></h4><p>平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em><br> /**<br>         * 冒泡排序 由大到小<br>         */<br>        public int[] bubbleSort(){<br>            int times;<br>            boolean need=true;//判断后面数据是否需要排序<br>            //每一次找的最小数，放最后，n个数就进行n-1次循环<br>            for (times=1; times&lt; length; times++) {<br>                if (need == false)<br>                    break;<br>                need = false;<br>                for (int pointer = 1; pointer &lt;= length - times; pointer++) {<br>                    if (nums[pointer - 1] &lt; nums[pointer]) {<br>                        need = true;//顺序变动，需要再次排序<br>                        swap(pointer, pointer - 1);<br>                    }<br>                }<br>            }<br>            return nums;<br>        }</p>
-<h4 id="2-选择排序-内排序，不稳定"><a href="#2-选择排序-内排序，不稳定" class="headerlink" title="2. 选择排序 内排序，不稳定"></a>2. <strong>选择排序</strong> <code>内排序，不稳定</code></h4><p> 平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n^2)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em><br>            /**<br>         * 选择排序，每次选择最大的依次放前面<br>         */<br>        public int[] selectionSort(){<br>            int max_index;//最大值下标<br>            //tail 作为已排序的尾，可做排序次数<br>            for (int tail = 0; tail &lt;length-1 ; tail++) {<br>                max_index = tail;<br>                for (int pointer = tail + 1; pointer &lt; length; pointer++) {<br>                    if (nums[max_index] &lt; nums[pointer]) {<br>                        max_index=pointer;<br>                    }<br>                }<br>                swap(max_index, tail);<br>            }<br>            return nums;<br>        }</p>
-<h4 id="3-插入排序-内排序，稳定"><a href="#3-插入排序-内排序，稳定" class="headerlink" title="3.插入排序 内排序，稳定"></a>3.<strong>插入排序</strong> <code>内排序，稳定</code></h4><p> 平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em><br>   /**<br>         * 插入排序,由大到小<br>         */<br>        public int[] insertionSort(){<br>            int tem;<br>            //tail表示已排好序的尾部<br>            for ( int tail=0;tail&lt;length-1;tail++){<br>                tem = nums[tail + 1];<br>                while (tail &gt;= 0 &amp;&amp; tem &gt; nums[tail]) {//tail&gt;=0 与 tem &gt; nums[tail] 两个判断条件不能互换<br>                    nums[tail + 1] = nums[tail];<br>                    tail–;<br>                }<br>                nums[tail + 1] = tem;<br>            }<br>            return nums;<br>        }</p>
-
+        <h4 id="1-优化后的冒泡排序-内排序，稳定"><a href="#1-优化后的冒泡排序-内排序，稳定" class="headerlink" title="1. 优化后的冒泡排序  内排序，稳定"></a>1. <strong>优化后的冒泡排序</strong>  <code>内排序，稳定</code></h4><p>平均时间复杂度：<em>O(n^2)</em>  最好情况：<em>O(n)</em>  最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em> </p>
+<pre><code>/**
+        * 冒泡排序 由大到小
+        */
+       public int[] bubbleSort(int[] nums){
+           int times;
+           boolean need=true;//判断后面数据是否需要排序
+           //每一次找的最小数，放最后，n个数就进行n-1次循环
+           for (times=1; times&lt; length; times++) {
+               if (need == false)
+                   break;
+               need = false;
+               for (int pointer = 1; pointer &lt;= length - times; pointer++) {
+                   if (nums[pointer - 1] &lt; nums[pointer]) {
+                       need = true;//顺序变动，需要再次排序
+                       swap(pointer, pointer - 1);
+                   }
+               }
+           }
+           return nums;
+       }</code></pre><h4 id="2-选择排序-内排序，不稳定"><a href="#2-选择排序-内排序，不稳定" class="headerlink" title="2. 选择排序 内排序，不稳定"></a>2. <strong>选择排序</strong> <code>内排序，不稳定</code></h4><p> 平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n^2)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em> </p>
+<pre><code>    /**
+ * 选择排序，每次选择最大的依次放前面
+ */
+public int[] selectionSort(int nums){
+    int max_index;//最大值下标
+    //tail 作为已排序的尾，可做排序次数
+    for (int tail = 0; tail &lt;length-1 ; tail++) {
+        max_index = tail;
+        for (int pointer = tail + 1; pointer &lt; length; pointer++) {
+            if (nums[max_index] &lt; nums[pointer]) {
+                max_index=pointer;
+            }
+        }
+        swap(max_index, tail);
+    }
+    return nums;
+}</code></pre><h4 id="3-插入排序-内排序，稳定"><a href="#3-插入排序-内排序，稳定" class="headerlink" title="3.插入排序 内排序，稳定"></a>3.<strong>插入排序</strong> <code>内排序，稳定</code></h4><p> 平均时间复杂度：<em>O(n^2)</em> 最好情况：<em>O(n)</em> 最坏情况：<em>O(n^2)</em> 空间复杂度：<em>O（1）</em> </p>
+<pre><code>/**
+   * 插入排序,由大到小
+   */
+  public int[] insertionSort(int nums){
+      int tem;
+      //tail表示已排好序的尾部
+      for ( int tail=0;tail&lt;length-1;tail++){
+          tem = nums[tail + 1];
+          while (tail &gt;= 0 &amp;&amp; tem &gt; nums[tail]) {//tail&gt;=0 与 tem &gt; nums[tail] 两个判断条件不能互换
+              nums[tail + 1] = nums[tail];
+              tail--;
+          }
+          nums[tail + 1] = tem;
+      }
+      return nums;
+  }</code></pre>
       
     </div>
     <div class="article-footer">
