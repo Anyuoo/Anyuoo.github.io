@@ -2,23 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://anyuoo.github.io/2020/03/02/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</loc>
+    <loc>http://anyuoo.github.io/2020/02/28/test%20-%20%E5%89%AF%E6%9C%AC/</loc>
     
-    <lastmod>2020-03-07T02:25:12.569Z</lastmod>
+    <lastmod>2020-03-07T05:23:31.141Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>http://anyuoo.github.io/2020/02/28/test/</loc>
     
-    <lastmod>2020-03-07T02:23:24.525Z</lastmod>
+    <lastmod>2020-03-07T05:23:31.141Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
+    
+    <lastmod>2020-03-07T05:14:41.727Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    
+    <lastmod>2020-03-07T04:09:43.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/03/02/Linux%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4%EF%BC%881%EF%BC%89--chmod/</loc>
+    
+    <lastmod>2020-03-07T02:44:03.711Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://anyuoo.github.io/2020/02/28/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</loc>
     
-    <lastmod>2020-03-01T08:10:01.754Z</lastmod>
+    <lastmod>2020-03-07T02:43:22.336Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/03/06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    
+    <lastmod>2020-03-07T02:41:28.633Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://anyuoo.github.io/2020/03/02/%E6%A8%A1%E6%9D%BF/</loc>
+    
+    <lastmod>2020-03-02T12:13:02.789Z</lastmod>
     
   </url>
   
@@ -37,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://anyuoo.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-02-28T06:06:04.139Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://anyuoo.github.io/links/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
@@ -45,13 +87,6 @@
   
   <url>
     <loc>http://anyuoo.github.io/repository/index.html</loc>
-    
-    <lastmod>2020-02-28T06:06:04.139Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://anyuoo.github.io/categories/index.html</loc>
     
     <lastmod>2020-02-28T06:06:04.139Z</lastmod>
     
