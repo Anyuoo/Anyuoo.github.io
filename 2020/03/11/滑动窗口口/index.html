@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>排序算法（二） | Virtual Life</title>
-  <meta name="description" content="快速排序算法思路：步骤一： 定义基准，并将原数组切割成两个无序数组，并将并将大于基准的放到基准右边，小于放到左边。 步骤二： 对基准左边和右边的数组分别重复进行步骤一操作。  基准可以是数组下标也可以是数组值  递归切割数组停止条件，当被切割数组长度为一时，停止。     &#x2F;** * 4.快速排序 * quickS方法递归调用自身，处理被基准分割的数组 * quick 定义基准pivot，并将大于">
+  <title>滑动窗口口 | Virtual Life</title>
+  <meta name="description" content="题目：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度 ####什么是滑动窗口？ 其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 满足题目要求，当再进入 a，队列变成了 abca，这时候不满足要求。所以，我们要移动这个队列！ ####如何移动？ 我们只要把队列的左边的元素移出就行了，直到满足题目要求！一直维持这样的队列，找出队列出现最长的长度时候，求">
 <meta property="og:type" content="article">
-<meta property="og:title" content="排序算法（二）">
-<meta property="og:url" content="http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:title" content="滑动窗口口">
+<meta property="og:url" content="http://anyuoo.github.io/2020/03/11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/index.html">
 <meta property="og:site_name" content="Virtual Life">
-<meta property="og:description" content="快速排序算法思路：步骤一： 定义基准，并将原数组切割成两个无序数组，并将并将大于基准的放到基准右边，小于放到左边。 步骤二： 对基准左边和右边的数组分别重复进行步骤一操作。  基准可以是数组下标也可以是数组值  递归切割数组停止条件，当被切割数组长度为一时，停止。     &#x2F;** * 4.快速排序 * quickS方法递归调用自身，处理被基准分割的数组 * quick 定义基准pivot，并将大于">
+<meta property="og:description" content="题目：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度 ####什么是滑动窗口？ 其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 满足题目要求，当再进入 a，队列变成了 abca，这时候不满足要求。所以，我们要移动这个队列！ ####如何移动？ 我们只要把队列的左边的元素移出就行了，直到满足题目要求！一直维持这样的队列，找出队列出现最长的长度时候，求">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-07T04:13:52.000Z">
-<meta property="article:modified_time" content="2020-03-07T05:00:21.841Z">
+<meta property="article:published_time" content="2020-03-11T11:45:02.000Z">
+<meta property="article:modified_time" content="2020-03-11T11:56:13.948Z">
 <meta property="article:author" content="Anyuoo">
-<meta property="article:tag" content="快速排序">
+<meta property="article:tag" content="滑动窗口">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+  <link rel="canonical" href="http://anyuoo.github.io/2020/03/11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/index.html">
   
   
     <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -267,7 +267,7 @@
                 <a class="category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/">算法</a>
               </p>
               <p class="item-title">
-                <a href="../../11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/" class="title">滑动窗口口</a>
+                <a href="" class="title">滑动窗口口</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-11T11:45:02.000Z" itemprop="datePublished">2020-03-11</time>
@@ -282,7 +282,7 @@
                 <a class="category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/">算法</a><i class="icon icon-angle-right"></i><a class="category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">排序</a>
               </p>
               <p class="item-title">
-                <a href="../%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/" class="title">排序算法（三）</a>
+                <a href="../../07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/" class="title">排序算法（三）</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-07T04:44:01.000Z" itemprop="datePublished">2020-03-07</time>
@@ -297,7 +297,7 @@
                 <a class="category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/">算法</a><i class="icon icon-angle-right"></i><a class="category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">排序</a>
               </p>
               <p class="item-title">
-                <a href="" class="title">排序算法（二）</a>
+                <a href="../../07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/" class="title">排序算法（二）</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-07T04:13:52.000Z" itemprop="datePublished">2020-03-07</time>
@@ -333,14 +333,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-排序算法（二）" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-滑动窗口口" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      排序算法（二）
+      滑动窗口口
     </h1>
   
 
@@ -349,19 +349,19 @@
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
 	<a href="" class="article-date">
-	  <time datetime="2020-03-07T04:13:52.000Z" itemprop="datePublished">2020-03-07</time>
+	  <time datetime="2020-03-11T11:45:02.000Z" itemprop="datePublished">2020-03-11</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/">算法</a>►<a class="article-category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">排序</a>
+    <a class="article-category-link" href="../../../../categories/%E7%AE%97%E6%B3%95/">算法</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="../../../../tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" rel="tag">快速排序</a>
+	<a class="article-tag-link" href="../../../../tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" rel="tag">滑动窗口</a>
   </span>
 
 
@@ -370,7 +370,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 323(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 282(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -380,55 +380,29 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><h3 id="算法思路："><a href="#算法思路：" class="headerlink" title="算法思路："></a>算法思路：</h3><p><strong>步骤一</strong>： 定义基准，并将原数组切割成两个无序数组，并将并将大于基准的放到基准右边，小于放到左边。</p>
-<p><strong>步骤二</strong>： 对基准左边和右边的数组分别重复进行步骤一操作。</p>
-<ul>
-<li><p>基准可以是数组下标也可以是数组值</p>
-</li>
-<li><p>递归切割数组停止条件，当被切割数组长度为一时，停止。</p>
-</li>
-<li><p>   /**</p>
-<pre><code>* 4.快速排序
-* quickS方法递归调用自身，处理被基准分割的数组
-* quick 定义基准pivot，并将大于基准的放到基准右边，小于放到左边
-*/</code></pre><p>   public int[] quickSort() {</p>
-<pre><code>int head = 0;
-int tail = length - 1;
-quickS(head, tail);
-return nums;</code></pre><p>   }</p>
-<p>   /**</p>
-<pre><code>* 方法递归调用自身，处理被基准分割的数组
-*
-* @param head
-* @param tail
-*/</code></pre><p>   public void quickS(int head, int tail) {</p>
-<pre><code>if (head &lt; tail) {
-    int pivot = quick(head, tail);
-    quickS(head, pivot - 1);
-    quickS(pivot + 1, tail);
-}</code></pre><p>   }</p>
-<p>   /**</p>
-<pre><code>* 定义基准pivot，并将大于基准的放到基准右边，小于放到左边
-*
-* @param head 数组头指针
-* @param tail 数组尾指针
-* @return
-*/</code></pre><p>   public int quick(int head, int tail) {</p>
-<pre><code>int pivot = head;//初始化基准，赋值头指针
-while (head &lt; tail) {
-    while (head &lt; tail &amp;&amp; nums[pivot] &gt;= nums[tail])
-        tail--;
-    swap(pivot, tail);
-    pivot = tail;
-    while (head &lt; tail &amp;&amp; nums[pivot] &lt; nums[head])
-        head++;
-    swap(pivot, head);
-    pivot = head;
-}
-return pivot;</code></pre><p>   }</p>
-</li>
-</ul>
-
+        <p><strong>题目</strong>：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度</p>
+<p>####<strong>什么是滑动窗口？</strong></p>
+<p>其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 满足题目要求，当再进入 a，队列变成了 abca，这时候不满足要求。所以，我们要移动这个队列！</p>
+<p>####<strong>如何移动？</strong></p>
+<p>我们只要把队列的<strong>左边</strong>的元素移出就行了，直到满足题目要求！<br>一直维持这样的队列，找出队列出现最长的长度时候，求出解！<br>时间复杂度：O(n)<br>####<strong>代码思路：</strong></p>
+<pre><code>class Solution {
+public int lengthOfLongestSubstring(String s) {
+    if (s.length()==0) return 0;
+    HashMap&lt;Character, Integer&gt; map = new HashMap&lt;Character, Integer&gt;();
+    int max = 0;
+    int left = 0;
+    for(int i = 0; i &lt; s.length(); i ++){
+        //窗口中已存在的字母
+        if(map.containsKey(s.charAt(i))){
+            //将最左边的移除，窗口左边缘更新
+            left = Math.max(left,map.get(s.charAt(i)) + 1);
+        }
+        //新值放入窗口，并算出当前无重复的长度，且和最大值比较
+        max = Math.max(max,i-left+1);
+         map.put(s.charAt(i),i);
+    }
+    return max; 
+}}</code></pre>
       
     </div>
     <div class="article-footer">
@@ -437,7 +411,7 @@ return pivot;</code></pre><p>   }</p>
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/" title="排序算法（二）" target="_blank" rel="external">http://anyuoo.github.io/2020/03/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/</a>
+      <a href="http://anyuoo.github.io/2020/03/11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/" title="滑动窗口口" target="_blank" rel="external">http://anyuoo.github.io/2020/03/11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -484,12 +458,12 @@ return pivot;</code></pre><p>   }</p>
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="../%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/" title="排序算法（三）"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="../../12/DP-%E6%9C%80%E5%A4%A7%E6%AD%A3%E6%96%B9%E5%BD%A2/" title="DP-最大正方形面积"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="../../06/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%80%EF%BC%89/" title="排序算法（一）"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="../../07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/" title="排序算法（三）"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

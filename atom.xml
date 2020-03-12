@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anyuoo.github.io/"/>
-  <updated>2020-03-07T05:14:41.727Z</updated>
+  <updated>2020-03-12T13:48:23.541Z</updated>
   <id>http://anyuoo.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DP-最大正方形面积</title>
+    <link href="http://anyuoo.github.io/2020/03/12/DP-%E6%9C%80%E5%A4%A7%E6%AD%A3%E6%96%B9%E5%BD%A2/"/>
+    <id>http://anyuoo.github.io/2020/03/12/DP-%E6%9C%80%E5%A4%A7%E6%AD%A3%E6%96%B9%E5%BD%A2/</id>
+    <published>2020-03-12T13:32:12.000Z</published>
+    <updated>2020-03-12T13:48:23.541Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="最大正方形面积"><a href="#最大正方形面积" class="headerlink" title="最大正方形面积"></a>最大正方形面积</h3><p>在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。</p><p><strong>示例：</strong></p><pre><code>输入: 1 0 1 0 01 0 1 1 11 1 1 1 11 0 0 1 0输出: 4</code></pre><p><strong>解答：</strong></p><p><img src="https://i.imgur.com/AN2uUBV.png" alt></p><p><strong>1.边界条件</strong></p><p><strong>2.状态转移</strong></p><pre><code>public class MaximalSquare {public static int maximalSquare(char[][] matrix) {    //判断matrix是否存在，不存在返回0    if (matrix == null || matrix.length == 0 || matrix[0].length == 0){        return 0;    }    int height=matrix.length;    int width=matrix[0].length;    int max_size=0;    //创建一个新的二维数组（第一行，第一列为0）存放构成正方形的边长    int[][] dp=new int[height+1][width+1];   for (int row=0;row&lt;height;row++){       for (int col=0;col&lt;width;col++){           if (matrix[row][col]==&apos;1&apos;){               //dp[row+1][col+1]对应原数组matrix[row][col]，判断左上，左，上的边长，要构成新的正方形要以最小边长为准；所以新正方形边长为最小边长加1               dp[row+1][col+1]=Math.min(Math.min(dp[row][col+1],dp[row+1][col]),dp[row][col])+1;               //最大正方形边长=max（新正方形边长，原最大边长）               max_size=Math.max(dp[row+1][col+1],max_size);           }       }   }    return max_size*max_size;}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;最大正方形面积&quot;&gt;&lt;a href=&quot;#最大正方形面积&quot; class=&quot;headerlink&quot; title=&quot;最大正方形面积&quot;&gt;&lt;/a&gt;最大正方形面积&lt;/h3&gt;&lt;p&gt;在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。&lt;/p&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://anyuoo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="动态规划" scheme="http://anyuoo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="DP" scheme="http://anyuoo.github.io/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>滑动窗口口</title>
+    <link href="http://anyuoo.github.io/2020/03/11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/"/>
+    <id>http://anyuoo.github.io/2020/03/11/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8F%A3/</id>
+    <published>2020-03-11T11:45:02.000Z</published>
+    <updated>2020-03-11T11:56:13.948Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>题目</strong>：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度</p><p>####<strong>什么是滑动窗口？</strong></p><p>其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 满足题目要求，当再进入 a，队列变成了 abca，这时候不满足要求。所以，我们要移动这个队列！</p><p>####<strong>如何移动？</strong></p><p>我们只要把队列的<strong>左边</strong>的元素移出就行了，直到满足题目要求！<br>一直维持这样的队列，找出队列出现最长的长度时候，求出解！<br>时间复杂度：O(n)<br>####<strong>代码思路：</strong></p><pre><code>class Solution {public int lengthOfLongestSubstring(String s) {    if (s.length()==0) return 0;    HashMap&lt;Character, Integer&gt; map = new HashMap&lt;Character, Integer&gt;();    int max = 0;    int left = 0;    for(int i = 0; i &lt; s.length(); i ++){        //窗口中已存在的字母        if(map.containsKey(s.charAt(i))){            //将最左边的移除，窗口左边缘更新            left = Math.max(left,map.get(s.charAt(i)) + 1);        }        //新值放入窗口，并算出当前无重复的长度，且和最大值比较        max = Math.max(max,i-left+1);         map.put(s.charAt(i),i);    }    return max; }}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;题目&lt;/strong&gt;：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度&lt;/p&gt;
+&lt;p&gt;####&lt;strong&gt;什么是滑动窗口？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://anyuoo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="滑动窗口" scheme="http://anyuoo.github.io/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>排序算法（三）</title>
