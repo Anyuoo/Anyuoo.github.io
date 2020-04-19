@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://anyuoo.github.io/"/>
-  <updated>2020-03-12T13:48:23.541Z</updated>
+  <updated>2020-04-19T02:23:39.821Z</updated>
   <id>http://anyuoo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA 2020.1 新版本激活到2089</title>
+    <link href="http://anyuoo.github.io/2020/04/19/IDEA-2020-1-%E6%96%B0%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%E5%88%B02089/"/>
+    <id>http://anyuoo.github.io/2020/04/19/IDEA-2020-1-%E6%96%B0%E7%89%88%E6%9C%AC%E6%BF%80%E6%B4%BB%E5%88%B02089/</id>
+    <published>2020-04-19T02:17:08.000Z</published>
+    <updated>2020-04-19T02:23:39.821Z</updated>
+    
+    <content type="html"><![CDATA[<p>###前提：下载IDEA 2020.1版本，和jetbrains-agent<br>[链接: <a href="https://pan.baidu.com/s/1jeQGXwXjc79teOsRjXmkPQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1jeQGXwXjc79teOsRjXmkPQ</a> ](链接: <a href="https://pan.baidu.com/s/1jeQGXwXjc79teOsRjXmkPQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1jeQGXwXjc79teOsRjXmkPQ</a> )<br>提取码: 5459<br>###1、选择试用启动idea</p><p>###2、进入或解压文件里面的压缩包，进入lib文件夹</p><p>###3、直接将jar文件用鼠标拖进idea界面(也可以使用插件安装方式)，然后一路重启或者确定，中间出现什么拖放失败不用理会，直接点确定就好是正常现象。</p><p>###4.点击Restart</p><p>###5.直接点击为IDEA安装</p><p>###6、重启之后一般情况下就已经破解完成，不需要再改配置文件，点击Help-&gt;Register查看是否成功破解<br>里面的激活码是重启之上自动填入的，如果不行找到下载的压缩文件lib下的ACTIVATION_CODE.txt换一个激活码或者查看README.pdf帮助。</p><p>　　</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###前提：下载IDEA 2020.1版本，和jetbrains-agent&lt;br&gt;[链接: &lt;a href=&quot;https://pan.baidu.com/s/1jeQGXwXjc79teOsRjXmkPQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;h
+      
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="http://anyuoo.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="IDEA" scheme="http://anyuoo.github.io/tags/IDEA/"/>
+    
+  </entry>
   
   <entry>
     <title>DP-最大正方形面积</title>
